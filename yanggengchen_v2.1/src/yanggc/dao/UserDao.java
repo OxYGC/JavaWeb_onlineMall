@@ -5,11 +5,9 @@ import java.sql.SQLException;
 import yanggc.domain.User;
 
 public interface UserDao {
-
-	int save(User user) throws SQLException;
-
-	int active(String code) throws SQLException;
-
-	User login(String username, String password) throws SQLException;
-
+	User login (String username,String password)throws SQLException;
+	int register(User user) throws Exception;
+	User active(String code) throws Exception;
+	void updateUser(User user) throws Exception;
+	User findUser(String username) throws Exception;
 }

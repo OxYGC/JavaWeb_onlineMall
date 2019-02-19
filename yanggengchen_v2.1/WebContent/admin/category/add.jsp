@@ -7,15 +7,14 @@
 	</HEAD>
 	
 	<body>
-		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/adminCategoryServlet" method="post">
-			<input type="hidden" name="method" value="save">
+		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/" method="post">
+
 			&nbsp;
 			<table cellSpacing="1" cellPadding="5" width="100%" align="center" bgColor="#eeeeee" style="border: 1px solid #8ba7e3" border="0">
 				<tr>
 					<td class="ta_01" align="center" bgColor="#afd1f3" colSpan="4"
 						height="26">
-						<strong><STRONG>添加分类</STRONG>
-						</strong>
+						<STRONG>添加分类</STRONG>
 					</td>
 				</tr>
 

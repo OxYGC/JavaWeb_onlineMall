@@ -1,22 +1,15 @@
 package yanggc.service;
 
-import java.util.List;
-
-import yanggc.domain.Order;
-import yanggc.domain.OrderItem;
+import yanggc.domain.Orders;
+import yanggc.domain.User;
+import yanggc.utils.PageModel;
 
 public interface OrderService {
+	void saveOrder(Orders orders);
 
-	void submitOrder(Order order);
+	Orders findOrderByOid(String oid)throws Exception;
 
-	List<Order> findOrderByUid(String uid);
-
-	List<OrderItem> findOrderItemByOid(String oid);
-
-	Order findOrderByOid(String oid);
-
-	boolean updateOrderInfo(Order order);
-
-	void updateState(String r6_Order);
-
+	PageModel findMyOrdersWithPage(User user, int num)throws Exception;
+	
+	void updateOrder(Orders order)throws Exception;
 }

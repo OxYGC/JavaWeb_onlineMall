@@ -1,5 +1,6 @@
 package yanggc.utils;
 
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -23,9 +24,4 @@ public class MD5Utils {
 		}
 		return md5code;
 	}
-
-	public static void main(String[] args) {
-		System.out.println(md5("123"));
-	}
-
 }

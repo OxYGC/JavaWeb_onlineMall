@@ -1,14 +1,25 @@
 package yanggc.domain;
 
-public class User {
+import java.util.Date;
 
+public class User {
+/*	`uid` varchar(32) NOT NULL,
+	  `username` varchar(20) DEFAULT NULL,
+	  `password` varchar(20) DEFAULT NULL,
+	  `name` varchar(20) DEFAULT NULL,
+	  `email` varchar(30) DEFAULT NULL,
+	  `telephone` varchar(20) DEFAULT NULL,
+	  `birthday` date DEFAULT NULL,
+	  `sex` varchar(10) DEFAULT NULL,
+	  `state` int(11) DEFAULT '0',
+	  `code` varchar(64) DEFAULT NUL*/
 	private String uid;
 	private String username;
 	private String password;
 	private String name;
 	private String email;
 	private String telephone;
-	private String birthday;
+	private Date birthday;
 	private String sex;
 	private int state;
 	private String code;
@@ -48,10 +59,10 @@ public class User {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
-	public String getBirthday() {
+	public Date getBirthday() {
 		return birthday;
 	}
-	public void setBirthday(String birthday) {
+	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
 	public String getSex() {

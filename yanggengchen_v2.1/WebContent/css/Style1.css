@@ -213,7 +213,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_ok.gif);
+	background-image: url(../img/admin/button_ok.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -232,7 +232,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_cancel.gif);
+	background-image: url(../img/admin/button_cancel.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -251,7 +251,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_help.gif);
+	background-image: url(../img/admin/button_help.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -270,7 +270,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_search.gif);
+	background-image: url(../img/admin/button_search.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -288,7 +288,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_exit.gif);
+	background-image: url(../img/admin/button_exit.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -307,7 +307,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_view.gif);
+	background-image: url(../img/admin/button_view.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -326,7 +326,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_add.gif);
+	background-image: url(../img/admin/button_add.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -345,7 +345,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_del.gif);
+	background-image: url(../img/admin/button_del.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -364,7 +364,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_print.gif);
+	background-image: url(../img/admin/button_print.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -383,7 +383,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_modi.gif);
+	background-image: url(../img/admin/button_modi.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -402,7 +402,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_save.gif);
+	background-image: url(../img/admin/button_save.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -421,7 +421,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_alert.gif);
+	background-image: url(../img/admin/button_alert.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -440,7 +440,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_clock.gif);
+	background-image: url(../img/admin/button_clock.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -459,7 +459,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_close.gif);
+	background-image: url(../img/admin/button_close.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -478,7 +478,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/button_phone01.gif);
+	background-image: url(../img/admin/button_phone01.gif);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -497,7 +497,7 @@ A.eq:hover {
 	padding: 2px 4px 2px 10px;
 	border: 1px solid #8AA2CC;
 	background-attachment: fixed;
-	background-image: url(../images/hotel_dire_arrowc.jpg);
+	background-image: url(../img/admin/hotel_dire_arrowc.jpg);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #2F3F5B;
@@ -516,13 +516,13 @@ A.eq:hover {
 }
 .test 
 {
-	BACKGROUND-IMAGE: url(../images/aaa.gif); HEIGHT: 25px;
+	BACKGROUND-IMAGE: url(../img/admin/aaa.gif); HEIGHT: 25px;
 	
 }
 .optionOff 
 {
 	color:#909090;
-	background-image:url(../images/optionbgOff.gif);
+	background-image:url(../img/admin/optionbgOff.gif);
 	background-position:right;
 	background-repeat:no-repeat;
 	border-left:1px solid #a0a0a0;
@@ -532,7 +532,7 @@ A.eq:hover {
 }
 .optionOn {
 	color:#1E6BAE;
-	background-image:url(../images/optionbgOn.gif);
+	background-image:url(../img/admin/optionbgOn.gif);
 	background-position:right;
 	background-repeat:no-repeat;
 	border-left:1px solid #808080;

@@ -1,13 +1,13 @@
 package yanggc.service;
 
+import java.sql.SQLException;
+
 import yanggc.domain.User;
 
 public interface UserService {
-
-	public boolean regist(User user);
-
-	public boolean active(String code);
-
-	public User login(String username, String password);
-	
+	public User login(String um,String pwd) throws SQLException;
+	int regist(User user) throws Exception;
+	User active(String code)  throws Exception;
+	void updateUser(User user) throws Exception;
+	public User findUsers(String username) throws Exception;
 }

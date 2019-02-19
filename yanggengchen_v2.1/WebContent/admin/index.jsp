@@ -5,8 +5,11 @@
 <head>
 <title>网上商城管理中心</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<%-- 
+
 <link href="${pageContext.request.contextPath }/css/general.css" rel="stylesheet" type="text/css" />
 <link href="${pageContext.request.contextPath }/css/main.css" rel="stylesheet" type="text/css" />
+--%>
 
 <style type="text/css">
 body {
@@ -15,7 +18,7 @@ body {
 </style>
 </head>
 <body style="background: #278296">
-<center></center>
+<center><font style="color:#f00">错误信息</font></center>
 <form method="post" action="${pageContext.request.contextPath }/admin/home.jsp" target="_parent" name='theForm' onsubmit="return validate()">
   <table cellspacing="0" cellpadding="0" style="margin-top: 100px" align="center">
   <tr>

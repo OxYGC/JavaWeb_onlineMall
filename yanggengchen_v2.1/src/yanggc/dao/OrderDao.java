@@ -1,26 +1,21 @@
 package yanggc.dao;
 
-import java.lang.reflect.InvocationTargetException;
-import java.sql.SQLException;
 import java.util.List;
 
-import yanggc.domain.Order;
 import yanggc.domain.OrderItem;
+import yanggc.domain.Orders;
+import yanggc.domain.User;
 
 public interface OrderDao {
+	void saveOrder(Orders order)throws Exception;
 
-	void saveOrders(Order order) throws SQLException;
+	void saveOrderItem(OrderItem item)throws Exception;
 
-	void saveOrderItem(OrderItem item) throws SQLException;
+	Orders findOrderByOid(String oid)throws Exception;
 
-	List<Order> findOrderByUid(String uid) throws SQLException;
+	int findOrdersByPerson(User user)throws Exception;
 
-	List<OrderItem> findOrderItemByOid(String oid) throws SQLException, IllegalAccessException, InvocationTargetException;
-
-	Order findOrderByOid(String oid) throws SQLException, IllegalAccessException, InvocationTargetException;
-
-	int updateOrderInfo(Order order) throws SQLException;
-
-	void updateState(String oid) throws SQLException;
-
+	List<Orders> findMyOrdersWithPage(User user, int startIndex, int pageSize) throws Exception;
+	
+	void updateOrder(Orders order)throws Exception;
 }

@@ -1,55 +1,29 @@
-package yanggc.utils;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
+﻿package yanggc.utils;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 public class JedisUtils {
-	
-	private static int maxTotal = 0;
-	private static int maxIdle = 0;
-	private static String host = null;
-	private static int port = 0;
-	
-	private static JedisPoolConfig config = new JedisPoolConfig();
+	//创建连接池
+	private static JedisPoolConfig config;
+	private static JedisPool pool;
 	static{
-		//读取配置文件
-		InputStream in = JedisUtils.class.getClassLoader().getResourceAsStream("jedis.properties");
-		Properties pro = new Properties();
-		try {
-			pro.load(in);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		maxTotal = Integer.parseInt(pro.getProperty("maxTotal"));
-		maxIdle = Integer.parseInt(pro.getProperty("maxIdle"));
-		port = Integer.parseInt(pro.getProperty("port"));
-		host = pro.getProperty("host");
-		config.setMaxTotal(maxTotal);
-		config.setMaxIdle(maxIdle);
+		config=new JedisPoolConfig();
+		config.setMaxTotal(3000);
+		config.setMaxIdle(300);
+		pool=new JedisPool(config, "127.0.0.1", 6379);
 	}
 	
-	private static JedisPool pool = new JedisPool(config,host,port );
 	
-	//提供一个返回池子的方法
-	public static JedisPool getPool(){
-		return pool;
-	}
-	
-	//获得一个jedis资源方法
+	//获取连接的方法
 	public static Jedis getJedis(){
 		return pool.getResource();
 	}
 	
-	//关闭的方法
-	public static void close(Jedis jedis){
-		if(jedis!=null){
-			jedis.close();
-		}
-	}
 	
+	//释放连接
+	public static void closeJedis(Jedis j){
+		j.close();
+	}
 }

@@ -1,20 +1,17 @@
 package yanggc.dao;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import yanggc.domain.Product;
 
 public interface ProductDao {
+	List<Product> find9Hots()throws Exception;
 
-	List<Product> findHotProductList() throws SQLException;
+	List<Product> find9News()throws Exception;
 
-	List<Product> findNewProductList() throws SQLException;
+	Product findProductByPid(String pid)throws Exception;
 
-	Long findTotalCount(String cid) throws SQLException;
+	int findTotalRecordsByCid(String cid)throws Exception;
 
-	List<Product> findPageList(String cid, int index, int pageSize) throws SQLException;
-
-	Product findById(String pid) throws  Exception;
-
+	List<Product> findProductsWithPage(String cid, int startIndex, int pageSize)throws Exception;
 }

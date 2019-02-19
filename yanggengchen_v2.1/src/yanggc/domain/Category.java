@@ -1,10 +1,8 @@
 package yanggc.domain;
 
 public class Category {
-
 	private String cid;
 	private String cname;
-	
 	public String getCid() {
 		return cid;
 	}
@@ -17,7 +15,4 @@ public class Category {
 	public void setCname(String cname) {
 		this.cname = cname;
 	}
-	
-	
-	
 }
