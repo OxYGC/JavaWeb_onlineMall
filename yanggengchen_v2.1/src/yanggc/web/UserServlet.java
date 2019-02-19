@@ -22,7 +22,7 @@ import yanggc.utils.MD5Utils;
 import yanggc.utils.MailUtils;
 
 public class UserServlet extends BaseServlet {
-	
+
 	//退出
 	public String logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -115,7 +115,7 @@ public class UserServlet extends BaseServlet {
 		String code = CommonUtils.getUUID();
 		user.setCode(code);
 		//对密码进行md5加密
-		/*user.setPassword(MD5Utils.md5(user.getPassword()));*/
+		user.setPassword(MD5Utils.md5(user.getPassword()));
 		
 		//将user传递到service层
 		UserService userService = new UserServiceImpl();
@@ -125,7 +125,7 @@ public class UserServlet extends BaseServlet {
 			//注册成功
 			//跳转之前 使用java的API进行激活邮件的发送
 			String email = user.getEmail();
-			String activeUrl = "http://localhost:8080/yanggengchen_v1.0/user?method=active&code="+code;
+			String activeUrl = "http://localhost:8080/Heima57/user?method=active&code="+code;
 			String emailMsg = "恭喜你，注册成功，请点击下面的链接进行激活<a href='"+activeUrl+"'>"+activeUrl+"</a>";
 			try {
 				MailUtils.sendMail(email, emailMsg);

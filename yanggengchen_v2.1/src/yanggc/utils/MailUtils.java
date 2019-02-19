@@ -27,7 +27,7 @@ public class MailUtils {
 		// 创建验证器
 		Authenticator auth = new Authenticator() {
 			public PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("younggc@126.com", "yang2018");//授权码
+				return new PasswordAuthentication("haohao_itcast", "hao12345");//授权码
 			}
 		};
 
@@ -36,7 +36,7 @@ public class MailUtils {
 		// 2.创建一个Message，它相当于是邮件内容
 		Message message = new MimeMessage(session);
 
-		message.setFrom(new InternetAddress("younggc@126.com")); // 设置发送者
+		message.setFrom(new InternetAddress("haohao_itcast@126.com")); // 设置发送者
 
 		message.setRecipient(RecipientType.TO, new InternetAddress(email)); // 设置发送方式与接收者
 
