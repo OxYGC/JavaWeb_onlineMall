@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 配置很多bean -->
+<beans>
+	<bean id="productService" class="yanggc.impl.ProductServiceImpl"></bean>
+	<!-- <bean id="productService" class="yanggc.impl.ProductServiceImpl"></bean> -->
+	<bean id="userService" class="yanggc.impl.UserServiceImpl"></bean>
+	<bean id="categoryService" class="yanggc.impl.CategoryServiceImpl"></bean>
+	<bean id="productDao" class="yanggc.dao.impl.ProductDaoImpl"></bean>
+	<bean id="userDao" class="yanggc.dao.impl.UserDaoImpl"></bean>
+	<bean id="categoryDao" class="yanggc.dao.impl.CategoryDaoImpl"></bean>
+	
+	
+	
+	<bean id="cartService" class="yanggc.impl.CartServiceImpl"></bean>
+	<bean id="orderService" class="yanggc.impl.OrderServiceImpl"></bean>
+	<bean id="orderDao" class="yanggc.dao.impl.OrderDaoImpl"></bean>
+	
+	
+</beans>
